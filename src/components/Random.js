@@ -6,9 +6,7 @@ const FoodName = styled.span`
   font-size: 72px;
   font-family: "anamone";
 `;
-const reloadFn = () => {
-  window.location.reload();
-};
+
 const foodArray = [
   "족발",
   "보쌈",
@@ -85,12 +83,19 @@ const mentArray = ["이거 드세요.", "진짜 드실거죠?", "그냥 먹자..
 const randomMent = mentArray[Math.floor(Math.random() * mentArray.length)];
 
 function Random() {
-  let [alert, alertSet] = useState(true);
+  const [alert, alertSet] = useState(true);
+  const [count, setCount] = useState(0);
   useEffect(() => {
     let timer = setTimeout(() => {
       alertSet(false);
     }, 3000);
   });
+  const reloadFn = () => {
+    window.location.reload();
+    const result = count + 1;
+    setCount(result);
+  };
+  console.log(count);
   return (
     <div>
       {alert === true ? (
