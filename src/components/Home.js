@@ -12,22 +12,22 @@ function Home() {
     <div style={{ fontFamily: "anamone" }} className="jumbotron d-flex align-items-center min-vh-100">
       <div className="container text-center">
         <h2>
-          뭐 먹지?
+          뭐 하지?
           <br />
-          <small className="text-muted">RANDOM FOOD</small>
+          <small className="text-muted">What are you going to do?</small>
         </h2>
 
         <div className="marquee">
           <div className="outer">
             <div className="inner">
-              <span className="content">뭐먹지?뭐먹지?뭐먹지?뭐먹지?뭐먹지?뭐먹지?뭐먹지?</span>
-              <span className="content">뭐먹지?뭐먹지?뭐먹지?뭐먹지?뭐먹지?뭐먹지?뭐먹지?</span>
+              <span className="content">뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?</span>
+              <span className="content">뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?</span>
             </div>
           </div>
         </div>
 
         <Link to="/random" className="btn btn-success btn-lg">
-          뭐 먹지?
+          뭐 하지?
         </Link>
         <hr />
         <a className="btn btn-default" href="https://github.com/MyeongjunPark" target="_blank">
