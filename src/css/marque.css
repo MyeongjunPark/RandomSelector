@@ -1,0 +1,27 @@
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.marquee .outer {
+  overflow: hidden;
+  margin: 10px;
+}
+
+.marquee .outer .inner {
+  position: relative;
+  display: flex;
+  width: 200%;
+}
+
+.marquee .outer .inner:nth-child(1) {
+  animation: marquee 5s linear infinite;
+}
+
+.marquee .outer .inner .content {
+  width: 50%;
+}
