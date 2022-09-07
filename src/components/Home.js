@@ -6,11 +6,21 @@ const Copyright = styled.div`
   font-size: 11px;
   margin: 10px;
 `;
+const TabMenu = styled.a`
+  margin: 5px;
+  margin-bottom: 15px;
+`;
 
 function Home() {
   return (
     <div style={{ fontFamily: "anamone" }} className="jumbotron d-flex align-items-center min-vh-100">
       <div className="container text-center">
+        <TabMenu style={{ color: "#fff" }} className="btn btn-primary" href="https://myeongjunpark.github.io/RandomFood/">
+          뭐 먹지?
+        </TabMenu>
+        <TabMenu onClick={() => alert(`'어디 가지?'는 현재 개발중입니다. 감사합니다!`)} style={{ color: "#fff" }} className="btn btn-primary">
+          어디 가지?
+        </TabMenu>
         <h2>
           뭐 하지?
           <br />

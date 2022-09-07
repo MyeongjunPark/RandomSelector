@@ -4,7 +4,7 @@ import Loading from "./Loading";
 import "../css/fadein.css";
 import { Link } from "react-router-dom";
 const FoodName = styled.span`
-  font-size: 72px;
+  font-size: 60px;
   font-family: "anamone";
 `;
 const RefreshBtn = styled.button`
