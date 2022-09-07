@@ -5,8 +5,7 @@ import Random from "./components/Random";
 function App() {
   return (
     <div>
-      {/* <BrowserRouter basename={process.env.PUBLIC_URL}> */}
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/random" element={<Random />} />
           <Route path="/" element={<Home />} />

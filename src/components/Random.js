@@ -2,9 +2,13 @@ import styled from "styled-components";
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
 import "../css/fadein.css";
+import { Link } from "react-router-dom";
 const FoodName = styled.span`
   font-size: 72px;
   font-family: "anamone";
+`;
+const RefreshBtn = styled.button`
+  margin-right: 10px;
 `;
 
 const foodArray = [
@@ -107,9 +111,12 @@ function Random() {
               <h3>{randomMent}</h3>
               <FoodName>{randomValue}</FoodName>
               <br />
-              <button className="btn btn-success btn-lg" onClick={reloadFn}>
+              <RefreshBtn className="btn btn-success btn-lg" onClick={reloadFn}>
                 찐막?
-              </button>
+              </RefreshBtn>
+              <Link className="btn btn-warning btn-lg" to="/">
+                홈으로
+              </Link>
             </div>
           </div>
         </div>
