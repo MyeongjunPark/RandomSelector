@@ -19,7 +19,6 @@ const playArray = [
   "넷플릭스",
   "피크닉",
   "캠핑",
-  "바닷가 산책",
   "등산",
   "트래킹",
   "맛집 웨이팅",
@@ -49,7 +48,7 @@ const randomMent = mentArray[Math.floor(Math.random() * mentArray.length)];
 
 function Random() {
   const [alert, alertSet] = useState(true);
-  const [count, setCount] = useState(0);
+
   useEffect(() => {
     let timer = setTimeout(() => {
       alertSet(false);
@@ -57,10 +56,8 @@ function Random() {
   });
   const reloadFn = () => {
     window.location.reload();
-    const result = count + 1;
-    setCount(result);
   };
-  console.log(count);
+
   return (
     <div>
       {alert === true ? (

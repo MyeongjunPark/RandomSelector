@@ -36,7 +36,7 @@ function Home() {
           </div>
         </div>
 
-        <Link to="/random" className="btn btn-success btn-lg">
+        <Link style={{ color: "#fff" }} to="/random" className="btn btn-warning btn-lg">
           뭐 하지?
         </Link>
         <hr />
