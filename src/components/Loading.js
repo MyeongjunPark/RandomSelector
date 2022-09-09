@@ -15,7 +15,7 @@ function Loading() {
     <div className="jumbotron d-flex align-items-center min-vh-100">
       <LoadingImg className="container text-center">
         <img src="img/loadingImg.gif" alt="loadingImg" className="img-circle" />
-        <div>할 것 찾는 중...</div>
+        <div>갈 곳 찾는 중...</div>
       </LoadingImg>
     </div>
   );

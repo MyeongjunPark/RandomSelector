@@ -18,26 +18,26 @@ function Home() {
         <TabMenu style={{ color: "#fff" }} className="btn btn-primary" href="https://myeongjunpark.github.io/RandomFood/">
           뭐 먹지?
         </TabMenu>
-        <TabMenu onClick={() => alert(`'어디 가지?'는 현재 개발중입니다. 감사합니다!`)} style={{ color: "#fff" }} className="btn btn-primary">
-          어디 가지?
+        <TabMenu href="https://myeongjunpark.github.io/RandomPlay/" style={{ color: "#fff" }} className="btn btn-primary">
+          뭐 하지?
         </TabMenu>
         <h2>
-          뭐 하지?
+          어디 가지?
           <br />
-          <small className="text-muted">What are you going to do?</small>
+          <small className="text-muted">Where are you going?</small>
         </h2>
 
         <div className="marquee">
           <div className="outer">
             <div className="inner">
-              <span className="content">뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?</span>
-              <span className="content">뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?뭐하지?</span>
+              <span className="content">어디가지?어디가지?어디가지?어디가지?어디가지?어디가지?</span>
+              <span className="content">어디가지?어디가지?어디가지?어디가지?어디가지?</span>
             </div>
           </div>
         </div>
 
-        <Link style={{ color: "#fff" }} to="/random" className="btn btn-warning btn-lg">
-          뭐 하지?
+        <Link style={{ color: "#fff" }} to="/random" className="btn btn-danger btn-lg">
+          어디 가지?
         </Link>
         <hr />
         <a className="btn btn-default" href="https://github.com/MyeongjunPark" target="_blank">
