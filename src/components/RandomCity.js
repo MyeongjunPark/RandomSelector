@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useEffect, useState } from "react";
-import Loading from "./Loading";
+import Loading from "./LoadingCity";
 import "../css/fadein.css";
 import { Link } from "react-router-dom";
 const FoodName = styled.span`
@@ -25,6 +25,7 @@ const MentText = styled.h1`
   font-size: 18px;
   font-family: "anamone";
 `;
+const LinkWrap = styled.div``;
 
 const cityArray = [
   "서울특별시",
@@ -36,19 +37,12 @@ const cityArray = [
   "울산광역시",
   "세종특별자치시",
   "경기도",
-  //강원도 시작
   "강원도",
-  //충청북도 시작
   "충청북도",
-  //충청남도 시작
   "충청남도",
-  //전라북도 시작
   "전라북도",
-  //전라남도 시작
   "전라남도",
-  //경상북도 시작
   "경상북도",
-  //경상남도 시작
   "경상남도",
   "제주특별자치도",
 ];
@@ -226,7 +220,7 @@ function Random() {
     } else if (randomValue === "강원도") {
       const randomCityChoose = GangwonCity[Math.floor(Math.random() * GangwonCity.length)];
       setCityValue(randomCityChoose);
-    } else if (randomValue === "충정북도") {
+    } else if (randomValue === "충청북도") {
       const randomCityChoose = ChungcheongBukdo[Math.floor(Math.random() * ChungcheongBukdo.length)];
       setCityValue(randomCityChoose);
     } else if (randomValue === "충청남도") {
@@ -298,17 +292,19 @@ function Random() {
               )}
 
               <br />
-              <RefreshBtn className="btn btn-success btn-lg" onClick={reloadFn}>
-                찐막?
-              </RefreshBtn>
-              {toggleBtn ? (
-                <RefreshBtn className="btn btn-danger btn-lg" onClick={randomCity}>
-                  여기서 어디?
+              <LinkWrap>
+                <RefreshBtn style={{ backgroundColor: "#2c3e50", color: "#fff" }} className="btn btn-default btn-lg" onClick={reloadFn}>
+                  다시 돌리기
                 </RefreshBtn>
-              ) : null}
-              <Link style={{ color: "#fff", fontFamily: "anamone" }} className="btn btn-warning btn-lg" to="/">
-                홈으로
-              </Link>
+                {toggleBtn ? (
+                  <RefreshBtn className="btn btn-danger btn-lg" onClick={randomCity}>
+                    여기서 어디?
+                  </RefreshBtn>
+                ) : null}
+                <Link style={{ color: "#fff", fontFamily: "anamone", backgroundColor: "#2c3e50" }} className="btn btn-default btn-lg" to="/">
+                  홈
+                </Link>
+              </LinkWrap>
             </div>
           </div>
         </div>
