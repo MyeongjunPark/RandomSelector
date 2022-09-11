@@ -12,7 +12,7 @@ const BodyWarp = styled.div`
 const LinkWrap = styled.div``;
 const Wrap = styled.div`
   h1 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   a {
     display: flex;
@@ -44,13 +44,13 @@ function Home() {
 
           <LinkWrap>
             <Link style={{ color: "#fff", backgroundColor: "#2c3e50" }} to="/city" className="btn btn-default btn-lg">
-              어디 가지? Where shall we go?
+              어디 가지?
             </Link>
             <Link style={{ color: "#fff", backgroundColor: "#2c3e50" }} to="/food" className="btn btn-default btn-lg">
-              뭐 먹지? What do you eat?
+              뭐 먹지?
             </Link>
             <Link style={{ color: "#fff", backgroundColor: "#2c3e50" }} to="/play" className="btn btn-default btn-lg">
-              뭐 하지? What should we do?
+              뭐 하지?
             </Link>
           </LinkWrap>
           <hr />
